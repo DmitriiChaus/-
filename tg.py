@@ -19,7 +19,7 @@ def get_text_messages(message):
         for row in file_reader:
             if "/камера" in message.text:
                 bot.reply_to(message, f'за компьютером сидит {row["Name"]}')
-                print(f'{row["Name"]}')
+                # print(f'{row["Name"]}')
                 break
             else:
                 bot.reply_to(message, "Неверный формат ввода. Напиши /help.")

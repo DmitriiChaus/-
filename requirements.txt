@@ -1,0 +1,7 @@
+numpy
+face_recognition
+cv2
+os
+datetime
+telebot 
+csv

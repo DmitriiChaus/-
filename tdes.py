@@ -10,14 +10,14 @@ path = 'faces'
 images = []
 classNames = []
 myList = os.listdir(path)
-print(myList)
+#print(myList)
 
 for cls in myList:
     curImg = cv2.imread(f'{path}/{cls}')
     images.append(curImg)
     classNames.append(os.path.splitext(cls)[0])
 
-print(classNames)
+#print(classNames)
 
 def findEncodings(images):
     encodeList = []
@@ -41,7 +41,7 @@ def markAttendance(name):
 
 
 encodeListKnown = findEncodings(images)
-print("Декодирование закончено")
+#print("Декодирование закончено")
 
 cap = cv2.VideoCapture(0)
 
